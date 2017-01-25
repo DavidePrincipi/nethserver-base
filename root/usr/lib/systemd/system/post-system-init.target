@@ -1,0 +1,4 @@
+[Unit]
+Description=NethServer is configured
+Documentation=https://github.com/nethesis/nethserver-base
+After=nethserver-system-init.service

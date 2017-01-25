@@ -1,8 +1,10 @@
 [Unit]
-Description=Initialize NethServer configuration
+Description=NethServer initial configuration
 Documentation=https://github.com/nethesis/nethserver-base
 ConditionPathExists=/var/spool/first-boot
 After=network-online.target
+Before=post-system-init.target
+Wants=post-system-init.target
 DefaultDependencies=false
 Conflicts=shutdown.target
 RefuseManualStart=true
